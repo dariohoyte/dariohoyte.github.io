@@ -1,0 +1,14 @@
+#gallery img{
+  opacity:0.7;
+  border-radius: 3%;
+  transition: 0.7s;
+
+}
+#gallery img:hover{
+  opacity:1;
+  border: rgba(0,0,0,1) solid;
+  border-width: medium;
+
+  transform: scale(1.3);
+
+}
