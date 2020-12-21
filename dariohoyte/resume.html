@@ -399,7 +399,7 @@
 
 
 
-      <main>
+      </main>
       <!-- Main -->
 
 
@@ -417,7 +417,7 @@
               <ul class="list-unstyled mb-3">
                 <li>
                   <a href="https://www.linkedin.com/in/dario-hoyte" title="LinkedIn" aria-label="LinkedIn">
-                    <i class="fa fa-linkedin-square fa-2x" aria-label="LinkedIn"><span class="sr-only">LinkedIn</span></i></a>
+                    <i class="fa fa-linkedin-square fa-2x"><span class="sr-only">LinkedIn</span></i></a>
                 </li>
               </ul>
 
@@ -471,7 +471,7 @@
         var parameter = window.location.href.split("#");
         document.getElementById(parameter[1]).click();
         document.getElementById(parameter[1]).scrollIntoView({behavior: 'smooth'});
-        window.scrollTo(position.left, position.top + window.scrollY - 50);
+        // window.scrollTo(position.left, position.top + window.scrollY - 500);
       }
       window.onload = openSection;
     </script>
