@@ -124,7 +124,7 @@
 
               <hr class="my-4">
 
-              <button class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-briefcase"></i>&#9;Work Experience</button>
+              <button id="Work_Experience" class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-briefcase"></i>&#9;Work Experience</button>
               <div class="panel">
                 <p>
 
@@ -191,7 +191,7 @@
 
 
 
-              <button class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-graduation-cap"></i>&#9;Education/Certifications</button>
+              <button id="Education_Certifications" class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-graduation-cap"></i>&#9;Education/Certifications</button>
               <div class="panel">
                 <p>
 
@@ -362,7 +362,7 @@
                 </p>
               </div>
 
-              <button class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-cogs"></i>&#9;Skills</button>
+              <button id="Skills" class="accordion"><i style="color:rgba(0,0,0,0.4);" class="fa fa-cogs"></i>&#9;Skills</button>
               <div class="panel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
@@ -463,6 +463,16 @@
           }
         });
       }
+    </script>
+
+    <script language="JavaScript">
+      function openSection()
+      {
+        var parameter = window.location.href.split("#");
+        document.getElementById(parameter[1]).click();
+        document.getElementById(parameter[1]).scrollIntoView();
+      }
+      window.onload = openSection;
     </script>
 
 
