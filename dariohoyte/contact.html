@@ -84,7 +84,7 @@
                       <span style="font-size: 10px;">
                         <i class="fa fa-signal" aria-hidden="true"></i>&nbsp;
                         <span id="todaysDate">
-                          <script>document.write(new Date().toLocaleDateString())</script>
+                          <!-- <script>document.write(new Date().toLocaleDateString())</script> -->
                         </span>
                       </span>
 
@@ -96,8 +96,8 @@
                         <i class="fa fa-wifi" aria-hidden="true"></i>&nbsp;
                         <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>&nbsp;
                         <span id="todaysTime">
-                          <script>document.write(new Date().toLocaleTimeString('en-US'))</script> <!--'en-US', { hour: '2-digit', minute: '2-digit' } -->
-
+                          <!-- <script>document.write(new Date().toLocaleTimeString('en-US'))</script>  -->
+                          <!--'en-US', { hour: '2-digit', minute: '2-digit' } -->
                         </span>
                       </span>
                     </li>
@@ -222,15 +222,19 @@
     <script>
       function doTime()
       {
-          document.getElementById("todaysTime").innerHTML = new Date().toLocaleTimeString();
+          document.getElementById("todaysTime").innerHTML = new Date().toLocaleTimeString('en-US');
       }
 
       function doDate()
       {
-          document.getElementById("todaysDate").innerHTML = new Date().toLocaleDateString();
+          document.getElementById("todaysDate").innerHTML = new Date().toLocaleDateString('en-US');
+          // 'en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' }
       }
 
+      doTime();
       setInterval(doTime, 1000);
+
+      doDate();
       setInterval(doDate, 1000);
     </script>
 
