@@ -83,14 +83,19 @@
                     <li class="bg-dark rounded-0 text-light list-group-item d-flex justify-content-between align-items-center px-1" style="height:10px !important;">
                       <span style="font-size: 10px;">
                         <i class="fa fa-signal" aria-hidden="true"></i>&nbsp;
-                        <script>document.write(new Date().toLocaleDateString())</script>
+                        <span id="todaysDate">
+                          <script>document.write(new Date().toLocaleDateString())</script>
+                        </span>
                       </span>
 
                       <span style="font-size: 10px;">
                         <span class="badge badge-secondary badge-pill">11</span>&nbsp;
                         <i class="fa fa-wifi" aria-hidden="true"></i>&nbsp;
                         <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>&nbsp;
-                        <script>document.write(new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }))</script>
+                        <span id="todaysTime">
+                          <script>document.write(new Date().toLocaleTimeString('en-US'))</script> <!--'en-US', { hour: '2-digit', minute: '2-digit' } -->
+
+                        </span>
                       </span>
                     </li>
                   </ul>
@@ -143,7 +148,7 @@
           <!-- Grid container -->
           <div class="container p-4">
               <p>
-                Happy to be apart of the team! Let's learn from each other.
+                Happy to be a part of the team! Let's learn from each other.
               </p>
 
               <h5 class="text-uppercase mb-0">Follow me</h5>
@@ -208,6 +213,22 @@
         // window.scrollTo(position.left, position.top + window.scrollY - 500);
       }
       window.onload = openSection;
+    </script>
+
+
+    <script>
+      function doTime()
+      {
+          document.getElementById("todaysTime").innerHTML = new Date().toLocaleTimeString();
+      }
+
+      function doDate()
+      {
+          document.getElementById("todaysDate").innerHTML = new Date().toLocaleDateString();
+      }
+
+      setInterval(doTime, 1000);
+      setInterval(doDate, 1000);
     </script>
 
 
