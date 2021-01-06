@@ -14,6 +14,60 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/accordian.css" rel="stylesheet">
 
+    <!-- CUSTOM ON PAGE CSS -->
+    <style>
+      .paper {
+        background: #fff;
+        box-shadow:
+          /* The top layer shadow */
+          0 -1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+          0 -10px 0 -5px #eee,
+          /* The second layer shadow */
+          0 -10px 1px -4px rgba(0,0,0,0.15),
+           /* The third layer */
+          0 -20px 0 -10px #eee,
+          /* The third layer shadow */
+          0 -20px 1px -9px rgba(0,0,0,0.15);
+          /* Padding for demo purposes */
+          padding: 30px;
+          width:310px !important;
+          height:400px !important;
+      }
+      .paper2 {
+        background: #fff;
+        box-shadow:
+          /* The top layer shadow */
+          0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+          0 10px 0 -5px #eee,
+          /* The second layer shadow */
+          0 10px 1px -4px rgba(0,0,0,0.15),
+           /* The third layer */
+          0 20px 0 -10px #eee,
+          /* The third layer shadow */
+          0 20px 1px -9px rgba(0,0,0,0.15);
+          /* Padding for demo purposes */
+          padding: 30px;
+          width:310px !important;
+          height:400px !important;
+      }
+
+      table{
+        width:100%;
+      }
+      th, td {
+        padding: 1px;
+        margin: 0;
+        text-align: left;
+        vertical-align:top;
+      }
+
+    </style>
+    <!-- CUSTOM ON PAGE CSS -->
+
+
+
     <title>Dario Hoyte - R&eacute;sum&eacute;</title>
     <link rel="icon" href="images/icon_jsbcolor.png">
 
@@ -27,25 +81,26 @@
 
           <!-- Navbar -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top border">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img class="p-0 m-0" src="assets/images/logos/dh_logo_bgtransparent.png" width="40" height="40" alt="">
+                &nbsp;<span class="p-0 m-0" style="font-size:0.6em;">MSc, BSc</span>
+              </a>
 
-            <a class="navbar-brand" href="#">
-              <img class="p-0 m-0" src="assets/images/logos/dh_logo_bgtransparent.png" width="40" height="40" alt="">
-              &nbsp;<span class="p-0 m-0" style="font-size:0.6em;">MSc, BSc</span>
-            </a>
-
-            <button class="navbar-toggler"
-              type="button" data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-              <div class="navbar-nav text-uppercase">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="#">Stuff</a>
-                <a class="nav-item nav-link active" href="#">R&eacute;sum&eacute;<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+              <button class="navbar-toggler"
+                type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-uppercase">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                  <a class="nav-item nav-link" href="#">Stuff</a>
+                  <a class="nav-item nav-link active" href="#">R&eacute;sum&eacute;<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
               </div>
             </div>
 
@@ -64,305 +119,522 @@
 
 
 
-          <!-- Divider/Container-jumbotron- -->
 
 
-          <div class="jumbotron bg-white pt-4">
 
-            <!-- banner -->
-            <div class="text-center mb-3">
-              <img class="container rounded p-0" style="object-fit: cover;" alt="Resume Header" src="assets/images/header_backgrounds/resume_header_background4.jpg">
+
+
+          <div class="pt-3 pb-3"
+            style="background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) ), url('assets/images/header_backgrounds/white-wood-table7.jpg');">
+
+            <div class="container text-center mb-3">
+              <h1 class="display-4 mb-0">R&eacute;sum&eacute;</h1>
+              <h2 class="lead">Dario J Hoyte &middot; Curriculum Vitae</h2>
             </div>
-            <!-- banner -->
 
+            <!-- SUMMARY -->
+            <div class="container" id="summary">
+              <div class="row p-2 d-flex justify-content-center">
 
+                  <!-- image -->
+                    <img class="col-6 col-md-4 col-lg-3" style="object-fit: contain;" alt="" src="assets/images/misc/coffee-cup.png">
+                  <!-- image -->
 
-            <div class="container border rounded mb-1">
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0" style="font-size:1.3em; float: right;"><b>Summary</b></span><br>
+                      <hr class="my-2">
 
-
-              <h1 class="display-4 text-center">Dario J Hoyte - R&eacute;sum&eacute;</h1>
-              <p class="lead text-center">
-
-                  <i class="text-dark fa fa-map-marker" aria-hidden="true"></i>&#9;
-                      Coverley, Christ Church, BB17094<br>
-                  <a href="tel:+12462450110"><i class="text-dark fa fa-phone" aria-hidden="true"></i>&#9;
-                    246-245-0110</a><br>
-                  <a href="mailto:dariohoyte@gmail.com"><i class="text-dark fa fa-envelope" aria-hidden="true"></i>&#9;
-                    dariohoyte@gmail.com</a><br>
-                  <a href="https://www.linkedin.com/in/dario-hoyte" target="_blank"><i class="text-dark fa fa-linkedin-square" aria-hidden="true"></i>&#9;
-                    linkedin.com/in/dario-hoyte</a>
-              </p>
-              <hr class="my-4">
-
-
-              <p>Detailed and results-oriented professional, with 5+ years’ experience as a Database Administrator in a fast-paced sector.
-                Proven work ethic with systems development and informatics, business process reengineering and optimization,
-                database and network management, and accounting administration. MSc. (distinction) graduate in Renewable Energy Management,
-                with a BSc. background in Mathematics and Physics, seeking to leverage programming and analytical skills to support
-                business efficiency.
-              </p>
-
-              <hr class="my-4">
-
-              <button id="Work_Experience" class="accordion border"><i style="color:rgba(0,0,0,0.4);" class="fa fa-briefcase"></i>&#9;Work Experience</button>
-              <div class="panel">
-
-
-                  <ul class="list-group mt-2 mb-2">
-                    <li class="list-group-item list-group-item-action flex-column align-items-start" style="background-color: rgba(200,200,200,0.1) !important;">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-0">Database Administrator/Group Accounts</h5>
-                        <small>2015-2020</small>
-                      </div>
-                      <p class="mb-0">
-                        Foster & Ince Cruise Services Inc<small class="text-muted">, Harbour Business Park, St. Michael, Barbados</small>
+                      <p style="font-size:0.7em; text-align:justify;text-justify:inter-word;">A detailed and results-oriented professional, with 5+ years’ experience as a Database Administrator in a fast-paced sector.
+                        Proven work ethic with systems development and informatics, business process reengineering and optimization,
+                        database and network management, and accounting administration. MSc. (distinction) graduate in Renewable Energy Management,
+                        with a BSc. background in Mathematics and Physics, seeking to leverage programming and analytical skills to support
+                        business efficiency.
                       </p>
-                      <span class="badge badge-primary badge-pill">5+ years</span><br>
-                      <span class="badge badge-success badge-pill">VB</span>&#9;
-                      <span class="badge badge-success badge-pill">VBA</span>&#9;
-                      <span class="badge badge-success badge-pill">SQL</span>&#9;
-                      <span class="badge badge-success badge-pill">Python</span>&#9;
-                      <span class="badge badge-success badge-pill">SAGE 300 ERP</span>&#9;
-                      <span class="badge badge-success badge-pill">POS Systems</span>&#9;
-                      <span class="badge badge-success badge-pill">Payroll Systems</span>&#9;
-                      <span class="badge badge-success badge-pill">MS Office (Word, Excel, PowerPoint)</span>&#9;
-                      <span class="badge badge-success badge-pill">Windows Sever 2016</span>&#9;
-                      <span class="badge badge-success badge-pill">Win10</span>&#9;
-                      <span class="badge badge-success badge-pill">Linux</span>&#9;
-                      <span class="badge badge-success badge-pill">macOS</span>&#9;
-                      <span class="badge badge-success badge-pill">Android</span>&#9;
-                      <span class="badge badge-success badge-pill">iOS</span><br>
-                      <span class="badge badge-secondary badge-pill">Database design and maintenance</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Data administration</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Data Analysis</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Network security</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Process reengineering</span>&#9;
-                      <span class="badge badge-secondary badge-pill">User training</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Email server management</span>&#9;
-                      <span class="badge badge-secondary badge-pill">IT Helpdesk</span>&#9;
-                      <span class="badge badge-secondary badge-pill">Team lead</span>&#9;
 
-                    </li>
-                    <li class="list-group-item list-group-item-action flex-column align-items-start" style="background-color: rgba(200,200,200,0.1) !important;">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-0">Accounts Executive</h5>
-                        <small>2011-2015</small>
+                      <div class="list-group" style="font-size:0.7em;">
+                        <a href="tel:+12462450110" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"><i class="text-dark fa fa-phone" aria-hidden="true"></i>&#9;
+                          246-245-0110</a>
+                        <a href="mailto:dariohoyte@gmail.com" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"><i class="text-dark fa fa-envelope" aria-hidden="true"></i>&#9;
+                          dariohoyte@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/dario-hoyte" target="_blank" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-2"><i class="text-dark fa fa-linkedin-square" aria-hidden="true"></i>&#9;
+                          /dario-hoyte</a>
+
                       </div>
-                      <p class="mb-0">
-                        Foster & Ince Cruise Services Inc<small class="text-muted">, Harbour Business Park, St. Michael, Barbados</small>
-                      </p>
-                      <span class="badge badge-primary badge-pill">4 years</span><br>
-                      <span class="badge badge-success badge-pill">AR</span>&#9;
-                      <span class="badge badge-success badge-pill">AP</span>&#9;
-                      <span class="badge badge-success badge-pill">GL</span>&#9;
-                      <span class="badge badge-success badge-pill">Tax</span>&#9;
-                      <span class="badge badge-success badge-pill">SAGE 300 ERP</span>&#9;
-                      <span class="badge badge-success badge-pill">MS Office (Word, Excel, PowerPoint)</span>
 
-                    </li>
-                  </ul>
-
-
+                    </div>
+                  <!-- paper -->
 
               </div>
+            </div>
+            <!-- SUMMARY -->
 
 
 
+            <!-- WORK EXPERIENCE -->
+            <div class="container" id="work_experience">
+              <div class="row p-2 d-flex justify-content-center">
 
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0" style="font-size:1.3em; float: right;"><b>Work Experience</b></span><br>
+                      <hr class="my-2">
 
+                      <table class="mb-2" style="font-size:0.7em;">
+                        <tr>
+                          <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                          <td>
+                            <b>Database Administrator/Group Accounts</b><br>
+                            Foster & Ince Cruise Services Inc, Barbados<br>
+                            <small>2015-2020</small> <span class="badge badge-dark badge-pill">5+ years</span>
 
-              <button id="Education_Certifications" class="accordion border"><i style="color:rgba(0,0,0,0.4);" class="fa fa-graduation-cap"></i>&#9;Education/Certifications</button>
-              <div class="panel">
+                            <br>
+                            <div class="row justify-content-center">
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> IT Helpdesk</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> VB</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> VBA</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> MySQL</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> ERP Systems</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> POS Systems</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Payroll Systems</li>
 
-
-
-                  <ul class="list-group mt-2 mb-2">
-
-                    <li class="list-group-item list-group-item-action flex-column align-items-start" style="background-color: rgba(200,200,200,0.1) !important;">
-
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Degrees</h5>
-                        </div>
-
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-light">
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div>MSc. Renewable Energy Management,
-                                  <small>C.E.R.M.E.S, The University of the West Indies-CaveHill Campus, Barbados</small>
-                                  <span class="badge badge-primary badge-pill">Distinction</span>
-                                </div>
-                                <small>2019</small>
+                                </ul>
                               </div>
-                              <small class="font-italic">Educational credential assessment by World Education Services (WES)</small>
-                            </li>
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> MS Office</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Win10</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Linux</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> macOS</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Android</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> iOS</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> User training</li>
 
-                            <li class="list-group-item list-group-item-light">
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div>BSc. Mathematics and Physics (Double Major),
-                                  <small>The University of the West Indies-CaveHill Campus, Barbados</small>
-                                </div>
-                                <small>2011</small>
+                                </ul>
                               </div>
-                              <small class="font-italic">Educational credential assessment by World Education Services (WES)</small>
-                            </li>
-                        </ul>
-                    </li>
+                            </div>
 
 
-                    <li class="list-group-item list-group-item-action flex-column align-items-start" style="background-color: rgba(200,200,200,0.1) !important;">
-
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Professional Certificates</h5>
-                        </div>
-
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Google IT Support,
-                                  <small>Google<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Google IT Automation with Python,
-                                  <small>Google<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>SAS Programmer,
-                                  <small>SAS<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-
-
-                        </ul>
-                    </li>
+                          </td>
+                        </tr>
+                      </table>
 
 
 
+                      <table style="font-size:0.7em;">
+                        <tr>
+                          <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                          <td>
+                            <b>Accounts Executive</b><br>
+                            Foster & Ince Cruise Services Inc, Barbados<br>
+                            <small>2011-2015</small>
 
-                    <li class="list-group-item list-group-item-action flex-column align-items-start" style="background-color: rgba(200,200,200,0.1) !important;">
+                            <br>
+                            <div class="row justify-content-center">
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> AR</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> AP</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> GL</li>
 
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Specializations</h5>
-                        </div>
+                                </ul>
+                              </div>
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Tax</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Payroll</li>
+                                  <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Reconcilliations</li>
 
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Excel Skills for Business,
-                                  <small>Macquarie University<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Excel/VBA for Creative Problem Solving,
-                                  <small>University of Colorado Boulder<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Excel to MySQL: Analytic Techniques for Business,
-                                  <small>Duke University<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Python for Everybody,
-                                  <small>University of Michigan<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Python 3 Programming,
-                                  <small>University of Michigan<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Django for Everybody,
-                                  <small>University of Michigan<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Web Applications for Everybody,
-                                  <small>University of Michigan<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Web Design for Everybody: Basics of Web Development & Coding,
-                                  <small>University of Michigan<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>AWS Fundamentals,
-                                  <small>AWS (Amazon Web Services)<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Project Management & Other Tools for Career Development,
-                                  <small>University of California, Irvine<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-light">
-                                <div>Project Management Principles and Practices,
-                                  <small>University of California, Irvine<span class="font-italic">(via Coursera)</span></small>
-                                  <span class="badge badge-primary badge-pill">Honors</span>
-                                </div>
-                                <small>2020</small>
-                            </li>
+                                </ul>
+                              </div>
+                            </div>
 
+                          </td>
+                        </tr>
+                      </table>
 
+                    </div>
+                  <!-- paper -->
 
-                        </ul>
-                    </li>
-
-
-                  </ul>
+                  <!-- image -->
+                      <img class="col-6 col-md-4 col-lg-3" style="object-fit: contain;" alt="" src="assets/images/misc/indoor-plant.png">
+                  <!-- image -->
 
 
 
               </div>
-
-              <button id="Skills" class="accordion border"><i style="color:rgba(0,0,0,0.4);" class="fa fa-cogs"></i>&#9;Skills</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-
-
-              <div class="mb-3  ">
-              </div>
-
 
             </div>
+            <!-- WORK EXPERIENCE -->
 
-            <div class="container p-0 mb-1">
-              <a href="assets/docs/DarioHoyte-Curriculum_vitae_resume_2020-11.pdf" target="_blank"><i class="fa fa-print" aria-hidden="true"></i>Print</a> full r&eacute;sum&eacute; for all details
+
+
+            <!-- QUALIFICATIONS -->
+            <div class="container" id="qualifications">
+              <div class="row p-2 d-flex justify-content-center">
+
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" style=" margin-top: auto; margin-bottom: auto;" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0 p-0" style="font-size:1.3em; float: right;"><b>Qualifications</b></span><br>
+                      <hr class="my-2">
+
+                      <div class="" style="font-size:0.7em;">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Degrees</b>
+                      </div>
+
+                      <table class="ml-2 mb-4" style="font-size:0.7em;">
+                        <tr>
+                          <td><small><b>2019</b></small></td>
+                          <td style="padding-bottom: 4px;">
+                             | MSc. Renewable Energy Management<br>
+                             <span class="badge badge-dark badge-pill">Distinction</span> <em>UWI, Barbados<br>
+                             <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verified</u></a> by World Education Services (WES)</em>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2011</b></small></td>
+                          <td>
+                             | BSc. Mathematics and Physics<br>
+                             <em>UWI, Barbados<br>
+                             <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verified</u></a> by World Education Services (WES)</em>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+
+
+
+
+                      <div class="" style="font-size:0.7em;">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Professional Certificates</b>
+                      </div>
+
+                      <table class="ml-2 mb-3" style="font-size:0.7em;">
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Google IT Support &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Google IT Automation with Python &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| SAS Programmer &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                      </table>
+
+                    </div>
+                  <!-- paper -->
+
+
+
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                        <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Qualifications</b>
+                      </span>
+                      <br>
+                      <hr class="my-2">
+
+                      <div class="" style="font-size:0.7em;">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Specializations</b>
+                      </div>
+
+                      <table class="ml-2 mb-3" style="font-size:0.7em;">
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Excel Skills for Business &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Excel/VBA for Creative Problem Sols &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Excel-MySQL: Analytics for Business &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Web Applications for Everybody &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Web Design for Everybody &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Python for Everybody &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Python 3 Programming &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Django for Everybody &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| AWS Fundamentals &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Project Mngmt for Career Dev &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+                        <tr>
+                          <td><small><b>2020</b></small></td>
+                          <td>| Project Mngmt Principles & Pract. &middot; <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url" rel="external"><u>Verify</u></a></td>
+                        </tr>
+
+
+
+                      </table>
+
+                    </div>
+                  <!-- paper -->
+
+                  <!-- image -->
+                      <img class="col-6 col-md-4 col-lg-2" style="object-fit: contain;" alt="" src="assets/images/misc/postids.png">
+                  <!-- image -->
+
+              </div>
+
+            </div>
+            <!-- QUALIFICATIONS -->
+
+
+            <div class="container text-center" id="qualifications">
+            <!-- image -->
+              <img class="col-12 col-md-5 col-lg-5" style="object-fit: contain;" alt="" src="assets/images/misc/pen.png">
+            <!-- image -->
             </div>
 
 
+            <!-- SKILLS -->
+            <div class="container" id="skills">
+              <div class="row p-2 d-flex justify-content-center">
+
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" style=" margin-top: auto; margin-bottom: auto;" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0 p-0" style="font-size:1.3em; float: right;"><b>Skills</b></span><br>
+                      <hr class="my-2">
+
+                      <table class="mb-2" style="font-size:0.7em;">
+                        <tr>
+                          <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                          <td>
+                            <b>Technical Skills</b><br>
+                            <div class="row justify-content-center">
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> VBScript</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> VBA</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Python</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> MySQL</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> SQLite</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> HTML5</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> CSS3</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Bootstrap</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JavaScript</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JSON</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JQuery</li>
+
+                                </ul>
+                              </div>
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> MS Office</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Tableau</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Win10</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Linux</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> macOS</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Android</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> iOS</li>
+
+
+                                </ul>
+                              </div>
+                            </div>
+
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </div>
+                  <!-- paper -->
+
+
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                        <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Skills</b>
+                      </span>
+                      <br>
+                      <hr class="my-2">
+
+
+                      <table class="mb-2" style="font-size:0.7em;">
+                        <tr>
+                          <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                          <td>
+                            <b>Technical Skills</b><br>
+                            <div class="row justify-content-center">
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> VBScript</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> VBA</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Python</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> MySQL</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> SQLite</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> HTML5</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> CSS3</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Bootstrap</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JavaScript</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JSON</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> JQuery</li>
+
+                                </ul>
+                              </div>
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> MS Office</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Tableau</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Win10</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Linux</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> macOS</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> Android</li>
+                                  <li><i class="fa fa-code" aria-hidden="true"></i> iOS</li>
+
+
+                                </ul>
+                              </div>
+                            </div>
+
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </div>
+                  <!-- paper -->
+
+                  <!-- paper -->
+                    <div class="paper border m-3">
+                      <img class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                      <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                        <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Skills</b>
+                      </span>
+                      <br>
+                      <hr class="my-2">
+
+                      <table class="mb-2" style="font-size:0.7em;">
+                        <tr>
+                          <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                          <td>
+                            <b>Personal/Soft Skills</b><br>
+                            <div class="row justify-content-center">
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Verbal skills</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Written skills</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Visual skills</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> MySQL</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> SQLite</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> HTML5</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> CSS3</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Bootstrap</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> JavaScript</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> JSON</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> JQuery</li>
+
+                                </ul>
+                              </div>
+                              <div class="col-6">
+                                <ul class="list-unstyled">
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> MS Office</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Tableau</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Win10</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Linux</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> macOS</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> Android</li>
+                                  <li><i class="fa fa-smile-o" aria-hidden="true"></i> iOS</li>
+
+
+                                </ul>
+                              </div>
+                            </div>
+
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </div>
+                  <!-- paper -->
+
+
+              </div>
+
+            </div>
+            <!-- SKILLS -->
+
+
+            <!-- PRINT PDF CV -->
+            <div class="container text-center p-0 mb-1 mt-3">
+
+            <!-- PRINT PDF CV -->
+
+              <a href="assets/docs/DarioHoyte-Curriculum_vitae_resume_2020-11.pdf" target="_blank" class="shadow text-white text-capitalize btn mb-5"
+              onmouseover="this.style.transform='scale(1.15)';" onmouseout="this.style.transform='scale(1)';"
+              style="transition: 0.3s; border:2px solid white; background: linear-gradient(to right, rgba(100, 100, 100,0.5),rgba(150, 150, 150,0.3));">
+              <b><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Print full r&eacute;sum&eacute; for all details</b></a>
+            </div>
           </div>
 
-          <!-- Divider/Container-jumbotron -->
+
+          <!-- <a href="assets/docs/DarioHoyte-Curriculum_vitae_resume_2020-11.pdf" target="_blank"><i class="fa fa-print" aria-hidden="true"></i>Print</a> full r&eacute;sum&eacute; for all details -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
