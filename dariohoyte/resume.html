@@ -63,6 +63,15 @@
         vertical-align:top;
       }
 
+      .section_start::before {
+        display: block;
+        content: " ";
+        margin-top: -60px;
+        height: 60px;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
     </style>
     <!-- CUSTOM ON PAGE CSS -->
 
@@ -133,7 +142,7 @@
             </div>
 
             <!-- SUMMARY -->
-            <div class="container" id="summary">
+            <div class="container section_start" id="summary">
               <div class="row p-2 d-flex justify-content-center">
 
                   <!-- image -->
@@ -173,7 +182,7 @@
 
 
             <!-- WORK EXPERIENCE -->
-            <div class="container" id="work_experience">
+            <div class="container section_start" id="work_experience">
               <div class="row p-2 d-flex justify-content-center">
 
                   <!-- paper -->
@@ -274,7 +283,7 @@
 
 
             <!-- QUALIFICATIONS -->
-            <div class="container" id="qualifications">
+            <div class="container section_start"  id="qualifications">
               <div class="row p-2 d-flex justify-content-center">
 
                   <!-- paper -->
@@ -433,7 +442,7 @@
 
 
             <!-- SKILLS -->
-            <div class="container" id="skills">
+            <div class="container section_start" id="skills">
               <div class="row p-2 d-flex justify-content-center">
 
                   <!-- paper -->
@@ -718,6 +727,8 @@
         // window.scrollTo(position.left, position.top + window.scrollY - 500);
       }
       window.onload = openSection;
+
+
     </script>
 
 
