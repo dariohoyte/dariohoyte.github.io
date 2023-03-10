@@ -1,0 +1,28 @@
+ver2023.01
+Authour: Dario J Hoyte
+Project: Resume web page
+
+Date		Page	Update
+2023-01-24	Global	Remove "Stuff" index tab on header throughout website
+2023-01-24	Global	Header Logo goes to home page ("index.html")
+2023-01-24	Index	Change secondary header from "Why will Dario be a great fit for your IT team and development needs?!" to "Great fit | For your dynamic needs"
+2023-01-24	Index	Write script to auto determine approximate years of IT experience, with 1 year offset to take into account job loss during covid
+2023-01-25	Index	Change tile header from "Help-desk Consultant" to "End-User Consulting"
+2023-01-25	Index	Change tile header from "Business-Analytics Driven" to "Business-Analytics"
+2023-01-25	Index	Change tile header from "Innovative" to "Innovation"
+2023-01-25	Index	Change tile header from "Team-Oriented" to "Team-Orientation"
+2023-01-25	Index	Re-order tiles from "Digital Literacy;Innovation;Business-Analytics;Team-Orientation;Goal Seeking;End-User Consulting" to "Digital Literacy;Innovation;End-User Consulting;Business-Analytics;Goal Seeking;Team-Orientation"
+2023-01-25	Index	Change opening header from "Dario Hoyte is dedicated to supporting business efficiency through innovative techniques" to "Dario Hoyte is a business professional, dedicated to supporting business efficiency through innovative techniques"
+2023-01-25	Index	Change section 1 text from "Highly-rated amongst IT professionals, often exceeding expectations in many areas, including:" to "Highly-rated amongst IT professionals in many areas, including:"
+2023-01-25	Index	Change section 1 text from "VB, Python, MySQL, PHP, HTML, CSS, and so much more! Abreast with the latest in technology!" to "Deep into VB, Python, MySQL, PHP, HTML, CSS, and so much more - versed in the latest technology"
+2023-01-25	Index	Change section 1 text from "Full of pioneering ideas, reinforced by years of experience with various technologies and business flows." to "Intuitive ideas, reinforced by years of experience working with diverse technologies and business flows."
+2023-01-25	Index Change section 1 text from "Engaging user issues, without compromising overall product quality and integrity" to "Engaging with users to offer comprehensive support, satisfaction, and system integrity management."
+2023-01-25	Index Change section 1 text from "Big on data! Geared with many technical skills to accumulate and disect data for evaluation." to "Big on data! Fluid skills in accumulating and dissecting data for strategic evaluation."
+2023-01-25	Index Change section 1 text from "With an objective approach, inspired and driven by the timely vision set for productivity." to "Generating multi-dimensional approaches, driven by business-oriented objectives."
+2023-01-25	Index Change section 1 text from "Active teammate, built with the leadership and cooperative abilities required to get the job done." to "Team for all, and all for team! Brainstorming and collaboration to derive benefits from group creativity."
+2023-01-25	Index	Change section 2 header text from "What skill-sets are you and your team looking for? - look no further!" to "What skill sets are you seeking? - look no further!"
+2023-01-25	Index	Change section 2 text from "Sometimes more, is more! 10+ years of groomed skills and practical experience in the industry." to "Sometimes more, is more! Many years of groomed expertise and practical experience in various industries."
+2023-01-25	Index	Relocate subheader in section 2 "Sometimes more, is more! Many years of groomed expertise and practical experience in various industries." to right above skill lists
+2023-01-26	Resume	Reconfigure work experience page and add new details for Geekseat
+2023-01-26	Index	Add 5 star rating icons to section 1
+2023-01-28	Index	Add testimonial section with review tiles based on - https://mdbootstrap.com/docs/standard/extended/tiles/. Professional peers, previous work colleagues, outsourcing jobs etc
