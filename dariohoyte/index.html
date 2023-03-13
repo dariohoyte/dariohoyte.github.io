@@ -16,6 +16,62 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
+    <style>
+
+          .arrow {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: rotate(0deg);
+            cursor: pointer;
+          }
+
+          .arrow span {
+            display: block;
+            width: 1em;
+            height: 1em;
+            border-bottom: 5px solid white;
+            border-right: 5px solid white;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: animate 2s infinite;
+          }
+
+          .arrow span:nth-child(2) {
+            animation-delay: -0.2s;
+          }
+
+          .arrow span:nth-child(3) {
+            animation-delay: -0.4s;
+          }
+
+          @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotate(45deg) translate(-20px, -20px);
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(45deg) translate(20px, 20px);
+            }
+          }
+
+          .prevent-select {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+          }
+
+
+    </style>
+
+
+
+
     <title>Dario Hoyte - Home</title>
     <link rel="icon" href="assets/images/logos/dh_logo_bgwhite.png">
 
@@ -89,13 +145,27 @@
                             <em><b>business efficiency</b></em> through <em><b>innovative techniques</b></em>.
                           </h4>
                           <a class="btn btn-outline-light btn-lg" href="#more" role="button" data-toggle="collapse">Find out more!</a>
-                          <div id="more" class="collapse container mt-3">
+                          <div id="more" class="collapse container mt-3 lead " style="font-size:1.05em;">
                             The key to life is a good balance, and this is where Dario <em><b>excels</b></em>.
                             <br>As a <em><b>young</b></em> and <em><b>vibrant</b></em> individual who is <em><b>humble</b></em> and <em><b>passionate</b></em> about
                             achieving his dreams, <br>Dario is <em><b>multifaceted</b></em>, <em><b>fun</b></em> and <em><b>receptive</b></em> in nature.
                             <br><br>
-                            <span class="lead" style="font-size:1.2em; font-weight: 400;">Take a look around - let us engage!</span>
+                            <span class="lead" style="font-size:1.15em; font-weight: 300;">Let's talk!</span>
+
+                            <!--
+                            <a class="arrow" href="index.html#section1">
+                              <span class="mt-4 prevent-select"></span>
+                              <span class="mb-2 prevent-select"></span>
+                            </a>
+                            -->
+                            <br><br>
+                            <span class="lead fa fa-arrow-circle-down" style="font-size:2.15em;" aria-hidden="true"></span>
+
+
+
+
                           </div>
+
                       </div>
                     </div>
                   </div>
@@ -267,7 +337,7 @@
                     <div class="col-6 col-md-3 col-lg-2">
                       <ul class="list-unstyled">
                         <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> MS Office</li>
-                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Active Dir</li>
+                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Active Directory</li>
                         <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> ERP Software</li>
                         <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> and
                           <a href="resume.html#skills" class="text-white text-underline"
