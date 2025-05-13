@@ -192,14 +192,16 @@
               <img class="mb-3 mt-4 col-md-12 col-lg-6" src="assets/images/header_backgrounds/tech-work.gif" alt="Tech-Work"
                 style="pointer-events: none;">
               <p class="lead mb-5">
+                  Over
                   <script>
                     try {
-                      document.write(new Date().getFullYear()-1-2015 + "+")
+                      document.write(new Date().getFullYear()-2015)
+                      //document.write(new Date().getFullYear()-2015 + "+")
                     }
                     catch {
-                      document.write("7+")
+                      document.write("10")
                     }
-                  </script>
+                  </script>+
                   years of experience in IT best practices to support business services and products.<br>
                   Highly-rated amongst IT professionals in many areas, including:
               </p>
@@ -442,264 +444,85 @@
 
               <!--<h2>Don't just take my word - the reviews are in! <span class="fa fa-thumbs-up text-warning" style="font-size:1.5em"></span></h2>-->
               <div class="lead" style="font-size:2.1em; font-weight: 400; line-height: 130%;">
-                Don't just take my word - the reviews are in! <span class="fa fa-thumbs-up text-warning" style="font-size:1.2em"></span>
+                Real People, Real Reviews! <span class="fa fa-thumbs-up text-warning" style="font-size:1.2em"></span>
               </div>
 
-              <br>
 
 
-              <div class="row text-left">
 
-                <!--col 1 -->
-                <div class="col-lg-4 col-md-12 mb-0 mb-lg-0">
+              <!-- <div id="carouselReviews" class="carousel slide  mt-4" data-ride="carousel"> -->
+              <div id="carouselReviews" class="carousel slide  mt-4" data-interval=carouselIntervalCustom>
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselReviews" data-slide-to="1"></li>
+                  <li data-target="#carouselReviews" data-slide-to="2"></li>
+                  <li data-target="#carouselReviews" data-slide-to="3"></li>
+                  <li data-target="#carouselReviews" data-slide-to="4"></li>
+                  <li data-target="#carouselReviews" data-slide-to="5"></li>
+                  <li data-target="#carouselReviews" data-slide-to="6"></li>
+                  <li data-target="#carouselReviews" data-slide-to="7"></li>
+                  <li data-target="#carouselReviews" data-slide-to="8"></li>
+                  <li data-target="#carouselReviews" data-slide-to="9"></li>
+                </ol>
 
-                  <div class="card bg-primary text-white mb-4">
-                      <div class="card-body">
+                <!-- review slide number-->
+                <p id="SlideNumber"></p>
 
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star-half-o text-warning"></span>
 
-                              <span class="font-weight-light" style="font-size:1em">4.5</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                <div class="carousel-inner">
 
-                          </h5>
+                  <div class="carousel-item active">
 
-                          <h5 class="mb-0">Mark C.</h5>
+                    <!-- Slide 1 content starts here-->
+                    <div class="card bg-primary text-white m-0 border-white px-3">
+                        <div class="card-body">
 
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
-                              IT Manager<br><br>
-                              Professional peer<br>
-                          </p>
 
-                          <p class="font-normal">"Extremely knowledgeable, proactive thinker.  Great technical asset."
-                          </p>
+                              <h5 class="card-title">
+                                  <span class="fa fa-star text-warning"></span>
+                                  <span class="fa fa-star text-warning"></span>
+                                  <span class="fa fa-star text-warning"></span>
+                                  <span class="fa fa-star text-warning"></span>
+                                  <span class="fa fa-star text-warning"></span>
 
-                      </div>
-                  </div>
+                                  <!--
+                                  <span class="font-weight-light" style="font-size:1em">5</span>
+                                  <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                  -->
 
-                  <div class="card bg-danger text-white mb-4">
-                      <div class="card-body">
+                              </h5>
 
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star-half-o text-warning"></span>
+                              <!-- review quoted-->
+                              <p class="font-normal">
+                                "Distinction - excellent customer service, outstanding speed of response and magnificent knowledge.<br>
+                                Proactive and attentive to detail."
+                              </p>
 
-                              <span class="font-weight-light" style="font-size:1em">4.7</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                          </h5>
+                              <!-- review author name-->
+                              <h5 class="mb-0">Roberto M.</h5>
 
-                          <h5 class="mb-0">Shelly-Ann G.</h5>
+                              <!-- review author details-->
+                              <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
 
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> USA<br>
-                              BSc. Bussiness and Technology Communications, Buckinghamshire New University<br><br>
-                              Professional peer<br>
-                          </p>
+                                  IT Manager, Western Union<br><br>
+                                  Reporting Manager<br><br>
+                                  <span class="fa fa-map-marker font-weight-normal"></span> Costa Rica<br>
+                              </p>
+                              <br>
 
-                          <p class="font-normal">"Dario is very competent and reliable.
-                            Dependable and has a willingness to troubleshoot and resolve any issue to great satisfaction."
-                          </p>
 
-                      </div>
-                  </div>
 
-                  <div class="card bg-white text-dark mb-4">
-                      <div class="card-body">
-
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-
-                              <span class="font-weight-light" style="font-size:1em">5</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                          </h5>
-
-                          <h5 class="mb-0">Saran H.</h5>
-
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
-                              Chartered Accountant FCCA, CPA, CGA<br><br>
-                              Outsourcing jobs<br>
-                          </p>
-
-                          <p class="font-normal">"I have called on Dario many times for IT related matters.
-                            He's assisted with selecting the best hardware and software solutions for my needs;
-                            setting up computers, phones, tablets, creating networks, and provided data analysis solutions etc.
-                            I HIGHLY recommend!"
-                          </p>
-
-                      </div>
-                  </div>
-
-                </div>
-                <!--col 1 -->
-
-
-                <!--col 2 -->
-                <div class="col-lg-4 mb-0 mb-lg-0">
-
-                  <div class="card bg-info text-white mb-4">
-                    <div class="card-body">
-
-                        <h5 class="card-title">
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star text-warning"></span>
-                            <span class="fa fa-star-half-o text-warning"></span>
-
-                            <span class="font-weight-light" style="font-size:1em">4.5</span>
-                            <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                        </h5>
-
-                        <h5 class="mb-0">Dorian M.</h5>
-
-                        <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                            <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
-                            MSc. Business Analytics<br>Systems Developer (Data Engineer) <br><br>
-                            Previous work colleague - direct reportee<br>
-                        </p>
-
-                        <p class="font-normal">"Is always quick with solutions, often thinking outside the box.
-                          Commendable critical thinking skills and making ideas into a reality."
-                        </p>
-
-                    </div>
-                  </div>
-
-                  <div class="card bg-secondary text-white mb-4">
-                      <div class="card-body">
-
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star-half-o text-warning"></span>
-
-                              <span class="font-weight-light" style="font-size:1em">4</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                          </h5>
-
-                          <h5 class="mb-0">Jamal B.</h5>
-
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> USA<br>
-                              BSc. University of the West Indies<br>Professional Engineer (PE)<br><br>
-                              Professional peer<br>
-                          </p>
-
-                          <p class="font-normal">"Dario is innovative in his problem solving skills and determines root causes to avoid future problems."
-                          </p>
-
-                      </div>
-                  </div>
-
-                  <div class="card bg-success  text-white mb-4">
-                      <div class="card-body">
-
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star-half-o text-warning"></span>
-
-                              <span class="font-weight-light" style="font-size:1em">4.5</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                          </h5>
-
-                          <h5 class="mb-0">Stacey A.</h5>
-
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> Jamaica<br>
-                              Chartered Accountant/Tax Professional<br><br>
-                              Previous work colleague<br>
-                          </p>
-
-                          <p class="font-normal">"Highly competent and knowledgeable in Information Technology.
-                            One who demonstrates excellent problem-solving skills. Diligent and sticks to tasks until completed."
-                          </p>
-
-                      </div>
-                  </div>
-
-                </div>
-                <!--col 2 -->
-
-
-                <!--col 3 -->
-                <div class="col-lg-4 mb-0 mb-lg-0">
-
-                  <div class="card bg-danger text-white mb-4">
-                      <div class="card-body">
-
-                          <h5 class="card-title">
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star text-warning"></span>
-                              <span class="fa fa-star-half-o text-warning"></span>
-
-                              <span class="font-weight-light" style="font-size:1em">4.8</span>
-                              <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                          </h5>
-
-                          <h5 class="mb-0">Shanice B.</h5>
-
-                          <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                              <span class="fa fa-map-marker font-weight-normal"></span> Canada<br>
-                              BComm. University of Guelph, Canada<br><br>
-                              Previous work colleague<br>
-                          </p>
-
-                          <p class="font-normal">"Extremely knowledgeable about tech, and finds solutions to save time and resources.
-                            Good at problem solving."
-                          </p>
-
-                      </div>
-                  </div>
-
-                  <div class="card bg-white text-dark mb-4">
-                      <div class="card-body">
-
-                            <h5 class="card-title">
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-                                <span class="fa fa-star text-warning"></span>
-
-                                <span class="font-weight-light" style="font-size:1em">5</span>
-                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
-                            </h5>
-
-                            <h5 class="mb-0">Khadija B.</h5>
-
-                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
-                                <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
-                                BSc. University of the West Indies, Barbados<br><br>
-                                Previous work colleague<br>
-                            </p>
-
-                            <p class="font-normal">"Diligent and high quality work. Competent problem solving skills with great attention to detail."
-                            </p>
 
                         </div>
+                    </div>
+                    <!-- Slide 1 content ends here-->
+
                   </div>
 
-                  <div class="card bg-primary text-white mb-4">
+                  <div class="carousel-item">
+
+                    <!-- Slide 2 content starts here-->
+                    <div class="card bg-secondary text-white m-0 border-white px-3">
                         <div class="card-body">
 
                             <h5 class="card-title">
@@ -709,27 +532,449 @@
                                 <span class="fa fa-star text-warning"></span>
                                 <span class="fa fa-star-half-o text-warning"></span>
 
+                                <!--
                                 <span class="font-weight-light" style="font-size:1em">4.5</span>
                                 <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
                             </h5>
 
-                            <h5 class="mb-0">Lia B.</h5>
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Extremely knowledgeable, proactive thinker.  Great technical asset."
+                            </p>
 
+                            <!-- review author name-->
+                            <h5 class="mb-0">Mark C.</h5>
+
+                            <!-- review author details-->
                             <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                IT Manager<br><br>
+                                Professional peer<br><br>
                                 <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
-                                BSc. University of the West Indies, Barbados<br><br>
-                                Previous work colleague<br>
                             </p>
+                            <br>
 
-                            <p class="font-normal">"Innovative thinker with exceptional programming skills who goes above and
-                              beyond to increase efficiency."
-                            </p>
 
-                      </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 2 content ends here-->
+
                   </div>
 
+                  <div class="carousel-item">
+
+                    <!-- Slide 3 content starts here-->
+                    <div class="card bg-success text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star-half-o text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">4.5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Is always quick with solutions, often thinking outside the box.<br>
+                              Commendable critical thinking skills and making ideas into a reality."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Dorian M.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                MSc. Business Analytics<br>Systems Developer (Data Engineer) <br><br>
+                                Previous work colleague - direct reportee<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 3 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 4 content starts here-->
+                    <div class="card bg-danger text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Dario is very competent and reliable.<br>
+                              Dependable and has a willingness to troubleshoot and resolve any issue to great satisfaction."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Shelly-Ann G.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                BSc. Bussiness and Technology Communications, Buckinghamshire New University<br><br>
+                                Professional peer<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> USA<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 4 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 5 content starts here-->
+                    <div class="card bg-info text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "I have called on Dario many times for IT related matters.<br>
+                              He's assisted with selecting the best hardware and software solutions for my needs; setting up computers, phones, tablets, creating networks, and provided data analysis solutions etc. I HIGHLY recommend!"
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Saran H.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+                                Chartered Accountant FCCA, CPA, CGA<br><br>
+                                Outsourcing jobs<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Barbados/Canada<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 5 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 6 content starts here-->
+                    <div class="card bg-primary text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Dario is innovative in his problem solving skills and determines root causes to avoid future problems."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Jamal B.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                BSc. University of the West Indies<br>Professional Engineer (PE)<br><br>
+                                Professional peer<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> USA<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 6 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 7 content starts here-->
+                    <div class="card bg-secondary text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Highly competent and knowledgeable in Information Technology.<br>
+                              One who demonstrates excellent problem-solving skills. Diligent and sticks to tasks until completed."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Stacey A.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                Chartered Accountant/Tax Professional<br><br>
+                                Previous work colleague<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Jamaica<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 7 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 8 content starts here-->
+                    <div class="card bg-success text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Extremely knowledgeable about tech, and finds solutions to save time and resources. Good at problem solving."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Shanice B.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                BComm. University of Guelph, Canada<br><br>
+                                Previous work colleague<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Canada<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 8 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 9 content starts here-->
+                    <div class="card bg-danger text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Diligent and high quality work. Competent problem solving skills with great attention to detail."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Khadija B.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                BSc. University of the West Indies, Barbados<br><br>
+                                Previous work colleague<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 9 content ends here-->
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <!-- Slide 10 content starts here-->
+                    <div class="card bg-info text-white m-0 border-white px-3">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+                                <span class="fa fa-star text-warning"></span>
+
+                                <!--
+                                <span class="fa fa-star-half-o text-warning"></span>
+                                -->
+
+                                <!--
+                                <span class="font-weight-light" style="font-size:1em">5</span>
+                                <span class="font-weight-normal" style="font-size:0.67em">out of 5 stars</span>
+                                -->
+
+                            </h5>
+
+                            <!-- review quoted-->
+                            <p class="font-normal">
+                              "Innovative thinker with exceptional programming skills who goes above and beyond to increase efficiency."
+                            </p>
+
+                            <!-- review author name-->
+                            <h5 class="mb-0">Lia B.</h5>
+
+                            <!-- review author details-->
+                            <p class="font-weight-normal" style="line-height:1.2; font-size:0.8em">
+
+                                BSc. University of the West Indies, Barbados<br><br>
+                                Previous work colleague<br><br>
+                                <span class="fa fa-map-marker font-weight-normal"></span> Barbados<br>
+                            </p>
+
+                            <br>
+
+
+                        </div>
+                    </div>
+                    <!-- Slide 10 content ends here-->
+
+                  </div>
+
+
                 </div>
-                <!--col 3 -->
+                <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+              <br>
 
 
               </div>
@@ -873,17 +1118,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
       </main>
       <!-- Main -->
 
@@ -898,6 +1132,23 @@
               <p>
                 Happy to be a part of the team! Let's learn from each other.
               </p>
+
+              <!-- CALL TO ACTION BUTTONS -->
+              <div class="container text-center p-0 mb-1 mt-4">
+                  <!-- PRINT PDF CV -->
+                  <a href="assets/docs/DarioHoyte-Curriculum_vitae_resume.pdf" target="_blank" class="shadow text-white  btn mb-2"
+                  onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"
+                  style="transition: 0.3s; border:2px solid white; background: linear-gradient(to right, rgba(100, 100, 100,0.5),rgba(150, 150, 150,0.3));">
+                  <b><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Download Printable Version of R&eacute;sum&eacute;</b></a>
+
+                  <br>
+
+                  <a href="contact.html" target="" class="shadow text-white  btn mb-4"
+                  onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"
+                  style="transition: 0.3s; border:2px solid white; background: linear-gradient(to right, rgba(100, 100, 100,0.5),rgba(150, 150, 150,0.3));">
+                  <b><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Schedule a Meeting</b></a>
+              </div>
+              <!-- CALL TO ACTION BUTTONS -->
 
               <h5 class="text-uppercase mb-0">Follow me</h5>
 
@@ -915,8 +1166,16 @@
           <!-- Copyright -->
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
               <small>This website was built with a responsive design by Dario Hoyte,
-                using the HTML5, CSS, JQuery, JavaScript and Bootstrap tools.</small><br>
-              Copyright &copy; <script>document.write(new Date().getFullYear())</script> Dario Hoyte
+                using HTML5, CSS, JQuery, JavaScript and Bootstrap tools.</small><br>
+              Copyright &copy;
+              <script>
+                try {
+                  document.write(new Date().getFullYear())
+                }
+                catch {
+                  document.write("2025")
+                }
+              </script> Dario Hoyte
           </div>
           <!-- Copyright -->
 
@@ -985,6 +1244,59 @@
     </script>
 
 
+
+
+
+    <!-- script to control SlideNumber-->
+    <script>
+        const carouselItems = document.querySelectorAll('#carouselReviews .carousel-item');
+        const totalSlides = carouselItems.length;
+
+        function updateSlideText(index) {
+          document.getElementById("SlideNumber").innerText = `Review ${index + 1} of ${totalSlides}`;
+        }
+
+        // On page load
+        document.addEventListener("DOMContentLoaded", function () {
+          const activeIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
+          updateSlideText(activeIndex);
+        });
+
+        // On slide event
+        $('#carouselReviews').on('slid.bs.carousel', function (e) {
+          updateSlideText(e.to);
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const carousel = document.getElementById('carouselReviews');
+          let started = false;
+
+          if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting && !started) {
+                  $('#carouselReviews').carousel({ interval: carouselIntervalCustom });
+                  $('#carouselReviews').carousel('cycle');
+                  started = true;
+                }
+              });
+            }, { threshold: 0.5 });
+
+            observer.observe(carousel);
+          } else {
+            // Fallback
+            $('#carouselReviews').carousel({ interval: carouselIntervalCustom });
+            $('#carouselReviews').carousel('cycle');
+          }
+        });
+    </script>
+
+    <script>
+      var carouselIntervalCustom = 8000;
+    </script>
 
   </body>
 </html>
