@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Custom styles for this template -->
+
+        <!-- CUSTOM ON PAGE CSS -->
+        <style>
+          .paper {
+            background: #fff;
+            box-shadow:
+              /* The top layer shadow */
+              0 -1px 1px rgba(0,0,0,0.15),
+              /* The second layer */
+              0 -10px 0 -5px #eee,
+              /* The second layer shadow */
+              0 -10px 1px -4px rgba(0,0,0,0.15),
+               /* The third layer */
+              0 -20px 0 -10px #eee,
+              /* The third layer shadow */
+              0 -20px 1px -9px rgba(0,0,0,0.15);
+              /* Padding for demo purposes */
+              padding: 30px;
+              width:325px !important;
+              height:485px !important;
+          }
+          .paper2 {
+            background: #fff;
+            box-shadow:
+              /* The top layer shadow */
+              0 1px 1px rgba(0,0,0,0.15),
+              /* The second layer */
+              0 10px 0 -5px #eee,
+              /* The second layer shadow */
+              0 10px 1px -4px rgba(0,0,0,0.15),
+               /* The third layer */
+              0 20px 0 -10px #eee,
+              /* The third layer shadow */
+              0 20px 1px -9px rgba(0,0,0,0.15);
+              /* Padding for demo purposes */
+              padding: 30px;
+              width:325px !important;
+              height:485px !important;
+          }
+
+          table{
+            width:100%;
+          }
+          th, td {
+            padding: 1px;
+            margin: 0;
+            text-align: left;
+            vertical-align:top;
+          }
+
+          .section_start::before {
+            display: block;
+            content: " ";
+            margin-top: -60px;
+            height: 60px;
+            visibility: hidden;
+            pointer-events: none;
+          }
+
+
+
+
+          .pulseME {
+            	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+            	transform: scale(1);
+            	animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+            	0% {
+            		transform: scale(0.95);
+            		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            	}
+            	70% {
+            		transform: scale(1);
+            		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            	}
+            	100% {
+            		transform: scale(0.95);
+            		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            	}
+            }
+
+
+            .pulseME-NoShadow {
+                transform: scale(1);
+                animation: pulse 2s infinite;
+              }
+              @keyframes pulse {
+                0% {
+                  transform: scale(0.95);
+                }
+                70% {
+                  transform: scale(1);
+                }
+                100% {
+                  transform: scale(0.95);
+                }
+              }
+
+
+        </style>
+        <!-- CUSTOM ON PAGE CSS -->
+
+
+
+        <title>Dario Hoyte - R&eacute;sum&eacute;/Curriculum Vitae</title>
+        <link rel="icon" href="assets/images/logos/dh_logo_bgwhite.png">
+
+  </head>
+
+
+  <body>
+
+      <!-- Header -->
+      <header class="sticky-top">
+
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top border">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img style="pointer-events: none;" class="p-0 m-0" src="assets/images/logos/dh_logo_bgtransparent.png" width="40" height="40" alt="DH">
+                &nbsp;<span class="p-0 m-0" style="font-size:0.6em;">MSc, BSc</span>
+              </a>
+
+              <button class="navbar-toggler"
+                type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-uppercase">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                  <!-- <a class="nav-item nav-link" href="#">Stuff</a> -->
+                  <a class="nav-item nav-link active" href="#">R&eacute;sum&eacute;<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+
+          </nav>
+          <!-- Navbar -->
+
+      </header>
+      <!-- Header -->
+
+
+
+
+
+      <!-- Main -->
+      <main>
+
+
+          <div class="pt-3 pb-3" role="img" aria-label="Modern White Stained Wood Table"
+          style="background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) ), url('assets/images/header_backgrounds/white-wood-table7.jpg');">
+
+                  <!-- SECTION: TITLE OF PAGE -->
+                  <div class="container text-center mb-3">
+                      <h1 class="display-4 mb-0">R&eacute;sum&eacute;</h1>
+                      <h2 class="lead">Dario J Hoyte &middot; Curriculum Vitae</h2>
+                  </div>
+                  <!-- SECTION: TITLE OF PAGE -->
+
+                  <!-- SECTION: SUMMARY -->
+                  <div class="container section_start" id="summary">
+                    <div class="row p-2 d-flex justify-content-center">
+
+                          <!-- image -->
+                          <img class="col-6 col-md-4 col-lg-3" style="object-fit: contain; pointer-events: none;" alt="Cup of Coffee" src="assets/images/misc/coffee-cup.png">
+                          <!-- image -->
+
+                          <!-- paper -->
+                          <div class="paper border m-3">
+                            <img style="pointer-events: none;" class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0" style="font-size:1.3em; float: right;"><b>Summary</b></span><br>
+                            <hr class="my-2">
+
+                            <p class="mb-5" style="font-size:0.65em; text-align:justify;text-justify:inter-word;">
+                              Experienced, detail-oriented and technical professional, with over
+                              <script>
+                                try {
+                                  document.write(new Date().getFullYear()-2015)
+                                  //document.write(new Date().getFullYear()-2015 + "+")
+                                }
+                                catch {
+                                  document.write("10")
+                                }
+                              </script>
+                              years of driving results across global, cross-disciplinary, and fast-paced sectors — including tourism,
+                              financial services, and retail. Throughout my career, I’ve honed and fused my skills in communication,
+                              teamwork, and critical thinking with IT operations, technical client support, and project management —
+                              always embracing challenges as opportunities for growth.<br><br>
+                              MSc (Distinction) graduate and Provincial Nominee (OINP) recipient, passionate about delivering responsive,
+                              reliable, and secure solutions that empower teams and optimize business processes for long-term success.<br><br>
+                              Let’s connect — I leverage a blend of collaborative, technical, leadership, and social skills to drive
+                              innovation and support business productivity.
+                            </p>
+
+
+
+                            <!-- business card -->
+
+                            <div style ="-webkit-transform: rotate(-18deg);
+                            -moz-transform: rotate(-18deg);
+                            -o-transform: rotate(-18deg);
+                            -ms-transform: rotate(-18deg);
+                            transform: rotate(-18deg);">
+
+                                <div class="container shadow-sm p-0 ml-5 pulseME" id="business_card" style="width: 240px;
+                                height: 140px;
+                                border-width:1.8px;
+                                border-style: outset;">
+
+                                    <div class="row h-100 p-0 m-0  d-flex justify-content-center text-white" style="background-color:rgba(255, 255, 255,1);" >
+
+                                        <!-- image -->
+                                          <img class="col-4 text-dark" style="object-fit: contain; pointer-events: none;" src="assets/images/logos/dh_logo_bgtransparent.png" alt="DH">
+                                        <!-- image -->
+
+                                        <div class="col-8 h-100 m-0 p-0" style="background-color:rgba(0, 0, 76,1);">
+                                            <div class="list-group " style="font-size:0.7em; height:100%; border-radius:0;">
+
+                                              <span class="px-1 mb-1" style="font-size:1.3em !important;">
+                                                <b>Dario J Hoyte</b>&nbsp;
+                                                <span style="font-size:0.6em !important;">| MSc, BSc</span><br>
+                                                <span style="font-size:0.72em !important;">Click <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> an option to connect!</span>
+                                              </span>
+
+                                              <!--
+
+                                              <a href="tel:+17183954036" class="p-2 m-0 list-group-item list-group-item-action"
+                                              style="background-color:rgba(0, 0, 76,1); border-top:1px solid white; color:rgba(255,255,255,1);"
+                                              onMouseOver="this.style.color='#0F0'" onMouseOut="this.style.color='rgba(255,255,255,1)'"
+                                              ><i class="fa fa-phone" aria-hidden="true"></i>&#9;
+                                                718-395-4036</a>
+                                              -->
+
+
+                                              <a href="mailto:dariohoyte@gmail.com" class=" p-2 list-group-item list-group-item-action"
+                                              style="background-color:rgba(0, 0, 76,1); border-top:1px solid white; border-bottom:1px solid white; color:rgba(255,255,255,1);"
+                                              onMouseOver="this.style.color='#0F0'" onMouseOut="this.style.color='rgba(255,255,255,1)'"><i class="fa fa-envelope" aria-hidden="true"></i>&#9;
+                                                dariohoyte@gmail.com</a>
+                                              <a href="https://www.linkedin.com/in/dario-hoyte" target="_blank" class=" p-2 list-group-item list-group-item-action"
+                                              style="background-color:rgba(0, 0, 76,1); border-bottom:1px solid white;color:rgba(255,255,255,1);"
+                                              onMouseOver="this.style.color='#0F0'" onMouseOut="this.style.color='rgba(255,255,255,1)'"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&#9;
+                                                /dario-hoyte</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- business card -->
+
+
+
+                          </div>
+                          <!-- paper -->
+
+                    </div>
+                  </div>
+                  <!-- SECTION: SUMMARY -->
+
+
+
+                  <!-- SECTION: QUALIFICATIONS -->
+                  <div class="container section_start" id="work_experience">
+                    <div class="row p-2 d-flex justify-content-center">
+
+                          <!-- paper -->
+                          <div class="paper2 border m-3 mt-5" style="-moz-transform: rotate(2deg);
+                          -o-transform: rotate(2deg);
+                          -ms-transform: rotate(2deg);
+                          transform: rotate(2deg);">
+                            <img style="pointer-events: none;" class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0" style="font-size:1.0em; float: right;"><b>Qualifications</b></span><br>
+                            <hr class="my-2">
+
+                            <div class="" style="font-size:0.7em;">
+                              <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Degrees</b>
+                            </div>
+
+                            <table class="ml-2 mb-4" style="font-size:0.67em;">
+                              <tr>
+                                <td><small><b>2019</b></small></td>
+                                <td style="padding-bottom: 4px;">
+                                   | MSc. Renewable Energy Management<br>
+                                   <span class="badge badge-dark badge-pill">Distinction</span> <em>UWI, Barbados<br>
+                                   <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url"
+                                   rel=""><u>Verified</u></a> by World Education Services (WES)</em>
+
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2011</b></small></td>
+                                <td>
+                                   | BSc. Mathematics and Physics<br>
+                                   <em>UWI, Barbados<br>
+                                   <a href="https://www.youracclaim.com/badges/19fbcbad-83ac-464f-b117-ec15d8ddbfbd/public_url"
+                                   rel=""><u>Verified</u></a> by World Education Services (WES)</em>
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+
+                            <div class="" style="font-size:0.7em;">
+                              <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Professional Certificates</b>
+                            </div>
+
+                            <table class="ml-2 mb-4" style="font-size:0.7em;">
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Google IT Support &middot; <a href="https://www.youracclaim.com/badges/9dc8bacb-1a0c-425b-9568-7c23edc14b5b/public_url"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Google IT Automation with Python &middot; <a href="https://www.youracclaim.com/badges/4ac30a42-164a-45c4-a120-e3198feb38b3/public_url"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+
+
+
+                            </table>
+
+
+
+                            <div class="" style="font-size:0.7em;">
+                              <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<b>Other Certificates</b>
+                            </div>
+
+                            <table class="ml-2 mb-4" style="font-size:0.7em;">
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Excel Skills for Business &middot; <a href="https://www.coursera.org/verify/specialization/PUQJX7WH8VKQ"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Excel/VBA for Creative Problem Sols &middot; <a href="https://www.coursera.org/verify/specialization/YT7Y3SPWMW9C"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Excel-MySQL: Analytics for Business &middot; <a href="https://www.coursera.org/verify/specialization/RZYSEK8NG3TK"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Python 3 Programming &middot; <a href="https://www.coursera.org/verify/specialization/BQNCE6JZUXDE"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b>2020</b></small></td>
+                                <td>| Project Mgmt Principles & Practices &middot; <a href="https://www.coursera.org/verify/specialization/D4C74SMETSH2"
+                                  rel=""><u>Verify</u></a></td>
+                              </tr>
+
+                              <tr>
+                                <td><small><b></b></small></td>
+                                <td><b>...plus more</b></small></td>
+                              </tr>
+
+                            </table>
+
+                          </div>
+                          <!-- paper -->
+
+                          <!-- image -->
+                          <img class="col-6 col-md-4 col-lg-3 text-dark" style="object-fit: contain; pointer-events: none;" alt="Cactus (Indoor Plant)" src="assets/images/misc/indoor-plant.png">
+                          <!-- image -->
+
+
+
+                    </div>
+
+                  </div>
+                  <!-- SECTION: QUALIFICATIONS -->
+
+
+
+
+
+                  <!-- SECTION: WORK EXPERIENCE -->
+                  <div class="container section_start"  id="qualifications">
+                    <div class="row p-2 d-flex justify-content-center">
+
+                          <!-- paper -->
+                          <div class="paper2 border m-3">
+                            <img class="mb-1" style=" margin-top: auto; margin-bottom: auto; pointer-events: none;" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0 p-0" style="font-size:1.3em; float: right;"><b>Work Experience</b></span><br>
+                            <hr class="my-2">
+
+                            <table class="mb-0" style="font-size:0.66em;">
+                              <tr>
+                                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Team Lead In-Store Services</b><br>
+                                  <div style="font-size:0.95em;">Best Buy Canada Ltd, Ontario<br></div>
+                                  <div style="font-size:0.8em;">2024-2025</div>
+                                  <ul class="list-unstyled" style="font-size:0.9em;">
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Technical Services</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Customer Service & Experience Management</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Cross-functional Team Leadership</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Technical Staff Management</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> KPI Analysis & Performance Optimization</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sales, Merchandising & Inventory Management</li>
+                                  </ul>
+
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+                            <table class="mb-0" style="font-size:0.66em;">
+                              <tr>
+                                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Technical Support Engineer</b><br>
+                                  <div style="font-size:0.95em;">GeekSeat USA &#40;Hybrid&#41;<br></div>
+                                  <div style="font-size:0.8em;">Covenant with Western Union-EUC LACA IT Support Specialist<br></div>
+                                  <div style="font-size:0.8em;">2021-2023</div>
+                                  <ul class="list-unstyled" style="font-size:0.9em;">
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> IT Infrastructure Management</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Incident & Clien Experience Management</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Technical Support</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> End-User Computing &#40;EUC&#41;</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Help-Desk</li>
+                                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i> SOP Development</li>
+                                  </ul>
+
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+                          </div>
+                          <!-- paper -->
+
+
+
+                          <!-- paper -->
+                          <div class="paper border m-3" style="-moz-transform: rotate(-3deg);
+                          -o-transform: rotate(-3deg);
+                          -ms-transform: rotate(-3deg);
+                          transform: rotate(-3deg);">
+                            <img style="pointer-events: none;" class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                              <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Work Experience</b>
+                            </span>
+                            <br>
+                            <hr class="my-2">
+
+
+
+                            <table class="mb-0" style="font-size:0.66em;">
+                              <tr>
+                                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Database Administrator/Group Accounts</b><br>
+                                  <div style="font-size:0.95em;">Foster & Ince Cruise Services Inc, Barbados<br></div>
+                                  <div style="font-size:0.8em;">2015-2020 <span style="font-size:1em;" class="badge badge-dark badge-pill">5+ years</span></div>
+
+                                  <div class="row justify-content-center" style="font-size:0.88em;">
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Database Management</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Management</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Policy Development</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Automation</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Data Analysis</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> VB/VBA, MySQL</li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Systems Admin</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Technical Support</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> User Training</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> ERP Systems</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Payroll Systems</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Team Lead</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+                            <table class="mb-0" style="font-size:0.66em;">
+                              <tr>
+                                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Accounts Executive</b><br>
+                                  <div style="font-size:0.95em;">Foster & Ince Cruise Services Inc, Barbados<br></div>
+                                  <div style="font-size:0.8em;">2011-2015</div>
+
+
+                                  <div class="row justify-content-center" style="font-size:0.9em;">
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> AR, AP & GL</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Tax & Payroll</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Reconcilliations</li>
+
+                                      </ul>
+                                    </div>
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> MS Office</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> ERP Systems</li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Acting Supervisor</li>
+
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+                            <table class="mb-0" style="font-size:0.66em;">
+                              <tr>
+                                <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Freelance/Private Consultancy</b> <span style="font-size:0.90em;">(various clients)</span><br>
+                                  <!-- <div style="font-size:0.95em;">Various entities<br></div>-->
+                                  <!-- <div style="font-size:0.8em;">2011-2015</div> -->
+
+
+                                  <div class="row justify-content-center" style="font-size:0.9em;">
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Business Support</li>
+
+                                      </ul>
+                                    </div>
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Systems Development</li>
+
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+
+
+
+
+
+                            <img class="col-8 p-0 m-0 mt-0" style="object-fit: contain; pointer-events: none;
+                            -webkit-transform: rotate(-18deg);
+                            -moz-transform: rotate(-18deg);
+                            -o-transform: rotate(-18deg);
+                            -ms-transform: rotate(-18deg);
+                            transform: rotate(-18deg);" alt="Call Dario postids" src="assets/images/misc/postids.png">
+
+
+                          </div>
+                          <!-- paper -->
+
+
+                    </div>
+
+                  </div>
+                  <!-- SECTION: WORK EXPERIENCE -->
+
+
+                  <div class="container text-center">
+                  <!-- image -->
+                    <img class="mt-2 col-11 col-md-5 col-lg-5" style="object-fit: contain; pointer-events: none;
+                    -webkit-transform: rotate(1deg);
+                    -moz-transform: rotate(1deg);
+                    -o-transform: rotate(1deg);
+                    -ms-transform: rotate(1deg);
+                    transform: rotate(1deg);" alt="Fountain Pen" src="assets/images/misc/pen.png">
+                  <!-- image -->
+                  </div>
+
+
+                  <!-- SECTION: SKILLS -->
+                  <div class="container section_start" id="skills">
+                    <div class="row p-2 d-flex justify-content-center">
+
+                        <!-- paper -->
+                          <div class="paper border m-3" style="-moz-transform: rotate(3deg);
+                          -o-transform: rotate(3deg);
+                          -ms-transform: rotate(3deg);
+                          transform: rotate(3deg);">
+                            <img class="mb-1" style=" margin-top: auto; margin-bottom: auto; pointer-events: none;" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0 p-0" style="font-size:1.3em; float: right;"><b>Skills</b></span><br>
+                            <hr class="my-2">
+
+                            <table class="mb-5" style="font-size:0.7em;">
+                              <tr>
+                                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Technical Skills</b><br>
+                                  <div class="row justify-content-center">
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> VBScript</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> VBA</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Python</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> MySQL</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> SQLite</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> HTML5</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> CSS3</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Bootstrap</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> JavaScript</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> JSON</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> JQuery</li>
+
+                                      </ul>
+                                    </div>
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> MS Office 365</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> ERP Software</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Spreadsheets</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Wrike</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Tanium</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> ServiceNow</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Remote Desktop</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Active Directory</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> PowerShell/CMD</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Win10/11</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Linux</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> macOS</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> Android</li>
+                                        <li><i class="fa fa-code" aria-hidden="true"></i> iOS</li>
+
+
+                                      </ul>
+                                    </div>
+                                  </div>
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+                            <img class="p-0 mt-4" style="object-fit: contain; pointer-events: none;
+                            -webkit-transform: rotate(-6deg);
+                            -moz-transform: rotate(-6deg);
+                            -o-transform: rotate(-6deg);
+                            -ms-transform: rotate(-6deg);
+                            transform: rotate(-6deg);
+                            margin-left:-100px;  width:140%;" alt="Glasses" src="assets/images/misc/glasses.png">
+
+                          </div>
+                        <!-- paper -->
+
+
+                        <!-- paper -->
+                          <div class="paper border m-3 mt-5" style="-moz-transform: rotate(1deg);
+                          -o-transform: rotate(1deg);
+                          -ms-transform: rotate(1deg);
+                          transform: rotate(1deg);">
+                            <img style="pointer-events: none;" class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                              <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Skills</b>
+                            </span>
+                            <br>
+                            <hr class="my-2">
+
+
+                            <table class="mb-2" style="font-size:0.7em;">
+                              <tr>
+                                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Operating Skills</b><br>
+                                  <div class="row justify-content-center">
+                                    <div class="col-12">
+                                      <ul class="list-unstyled">
+
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Database management</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Systems administration</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Project and process management</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Policy development</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Data recovery, research and analysis</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> End-user computing; training</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Troubleshooting</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Automation and scripting</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Testing and documentation</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Help desk; customer support</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Onsite and remote support</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Asset and inventory management</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Active directory</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Networking and security</li>
+                                        <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Finance and accounting</li>
+
+
+
+                                      </ul>
+                                    </div>
+
+                                  </div>
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </div>
+                        <!-- paper -->
+
+                        <!-- paper -->
+                          <div class="paper border m-3" style="-moz-transform: rotate(-2deg);
+                          -o-transform: rotate(-2deg);
+                          -ms-transform: rotate(-2deg);
+                          transform: rotate(-2deg);">
+                            <img style="pointer-events: none;" class="mb-1" src="assets/images/logos/dh_logo_bgtransparent.png" width="25" height="25" alt="DH">
+                            <span class="display-4 mb-0" style="font-size:1.3em; float: right;">
+                              <span class="display-4 mb-0" style="font-size:0.5em !important;"><b>cont'd</b></span>&nbsp;<b>Skills</b>
+                            </span>
+                            <br>
+                            <hr class="my-2">
+
+                            <table class="mb-4" style="font-size:0.7em;">
+                              <tr>
+                                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                                <td>
+                                  <b>Personal/Soft Skills</b><br>
+                                  <div class="row justify-content-center">
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Analytical</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Approachable</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Articulate</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Collaborative</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Confidential</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Innovative</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Organized/Timely</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Presentation skills</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Proactive</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Reliable</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Respectful</li>
+
+
+
+
+
+                                      </ul>
+                                    </div>
+                                    <div class="col-6">
+                                      <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="fa fa-smile-o" aria-hidden="true"></i> Ability to lead and be led</li>
+                                        <li class="mb-3"><i class="fa fa-smile-o" aria-hidden="true"></i> Emotionally Intelligent</li>
+                                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Observant and Adaptable</li>
+
+
+                                      </ul>
+                                    </div>
+                                  </div>
+
+
+                                </td>
+                              </tr>
+                            </table>
+
+
+
+
+
+
+                             <img class="col-10 p-0" style="object-fit: contain; pointer-events: none;
+                             -webkit-transform: rotate(6deg);
+                             -moz-transform: rotate(6deg);
+                             -o-transform: rotate(6deg);
+                             -ms-transform: rotate(6deg);
+                             transform: rotate(6deg);
+                             margin-left:50px;
+                             margin-top:0px;" alt="Schedule meeting with Dario - Index Pad" src="assets/images/misc/notepad.png">
+
+                          </div>
+                        <!-- paper -->
+
+
+
+
+                    </div>
+
+                  </div>
+                  <!-- SECTION: SKILLS -->
+
+
+
+
+          </div>
+
+
+
+
+      </main>
+      <!-- Main -->
+
+
+      <!-- Footer -->
+      <footer class="bg-dark text-white text-center text-lg-start">
+
+          <!-- Grid container -->
+          <div class="container p-4">
+              <p>
+                Happy to be a part of the team! Let's learn from each other.
+              </p>
+
+              <!-- CALL TO ACTION BUTTONS -->
+              <div class="container text-center p-0 mb-1 mt-4">
+                  <!-- PRINT PDF CV -->
+                  <a href="assets/docs/DarioHoyte-Curriculum_vitae_resume.pdf" target="_blank" class="shadow text-white  btn mb-2"
+                  onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"
+                  style="transition: 0.3s; border:2px solid white; background: linear-gradient(to right, rgba(100, 100, 100,0.5),rgba(150, 150, 150,0.3));">
+                  <b><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Download Printable Version of R&eacute;sum&eacute;</b></a>
+
+                  <br>
+
+                  <a href="contact.html" target="" class="shadow text-white  btn mb-4"
+                  onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"
+                  style="transition: 0.3s; border:2px solid white; background: linear-gradient(to right, rgba(100, 100, 100,0.5),rgba(150, 150, 150,0.3));">
+                  <b><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Schedule a Meeting</b></a>
+              </div>
+              <!-- CALL TO ACTION BUTTONS -->
+
+              <h5 class="text-uppercase mb-0">Follow me</h5>
+
+              <ul class="list-unstyled mb-3">
+                <li>
+                  <a href="https://www.linkedin.com/in/dario-hoyte" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin-square fa-2x"><span class="sr-only">LinkedIn</span></i></a>
+                </li>
+              </ul>
+
+              Go to <a href="#"><i class="fa fa-arrow-circle-up"></i> top</a><br>
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              <small>This website was built with a responsive design by Dario Hoyte,
+                using the latest HTML5, CSS, JQuery, JavaScript and Bootstrap tools.</small><br>
+              Copyright &copy; <script>document.write(new Date().getFullYear())</script> Dario Hoyte
+          </div>
+          <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+
+
+
+  </body>
+</html>
