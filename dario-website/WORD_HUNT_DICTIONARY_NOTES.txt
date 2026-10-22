@@ -1,5 +1,0 @@
-Word Hunt familiar vocabulary v2
-Source: prior SCOWL-derived embedded spelling list, filtered with TextBlob English spelling corpus frequencies.
-Short words have stricter frequency thresholds. Familiar long words are retained through a reviewed inclusion list. Known unsuitable entries are excluded.
-This is NOT a WordNet or wordfreq intersection: those datasets were unavailable in the build environment. It is not a complete human review.
-All Quick Draw words are 3-9 letters; the same vocabulary is used for board scanning and accepted answers.
